@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-5xl font-bold my-5">My <span class="text-purple-500">Banking</span></h1>
+    </header>
+    <main>
+        <section class="my-10 w-3/4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-yellow-500 rounded p-5">
+                    <h3 class="text-3xl">Deposited</h3>
+                    <h1 class="text-7xl">$<span id="deposit-total">00</span></h1>
+                </div>
+                <div class="bg-blue-500 rounded p-5">
+                    <h3 class="text-3xl">Withdrawn</h3>
+                    <h1 class="text-7xl">$<span id="withdraw-total">00</span></h1>
+                </div>
+                <div class="bg-red-500 rounded p-5">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h1 class="text-7xl">$<span id="balance-total">00</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class="my-10 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-500 rounded p-5">
+                    <h3 class="text-3xl">Please Deposite</h3>
+                    <div class="my-3">
+                        <input id="deposit-input" class="p-2 rounded w-full" type="number">
+                    </div>
+                    <div class="my-3">
+                        <button id="deposit-button" class="bg-yellow-200 text-black p-3 rounded w-1/4">Deposite</button>
+                    </div>
+                </div>
+                <div class="bg-blue-900 rounded p-5">
+                    <h3 class="text-3xl">Please Withdraw</h3>
+                    <div class="my-3">
+                        <input id="withdraw-input" class="p-2 rounded w-full" type="number">
+                    </div>
+                    <div class="my-3">
+                        <button id="withdraw-button" class="bg-pink-200 text-black p-3 rounded w-1/4">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="js/banking.js"></script> -->
+    <script src="js/advance.js"></script>
+</body>
+
+</html>
